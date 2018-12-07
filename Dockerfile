@@ -1,4 +1,4 @@
 FROM java:latest
-ADD k8s-test-1.1.war app.war
-RUN bash -c 'touch /app.war'
-ENTRYPOINT ["java","-jar","/app.war"]
+ADD patchMng-0.0.1-SNAPSHOT.jar app.jar
+RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java","-jar","/app.jar"]
